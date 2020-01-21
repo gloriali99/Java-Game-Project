@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+
+
+<SplitPane fx:id="window" onKeyPressed="#handleKeyPress" dividerPositions="0.907035175879397" orientation="VERTICAL" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+  <items>
+    <AnchorPane fx:id="game">
+         <children>
+            <GridPane fx:id="squares">
+              <columnConstraints>
+                <ColumnConstraints/>
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints/>
+              </rowConstraints>
+            </GridPane>
+         </children></AnchorPane>
+    <AnchorPane fx:id="footer">
+         <children>
+            <ToolBar fx:id="tools">
+               <items>
+               	
+                  <Button fx:id="home" mnemonicParsing="false" onAction="#handleHomeButton" prefHeight="30.0" prefWidth="30.0" text="Home">
+                  	<font>
+            			<Font size="7.0" />
+         		  	</font>
+         		  </Button>
+                  <Button fx:id="retry" mnemonicParsing="false" onAction="#handleRetryButton" prefHeight="30.0" prefWidth="30.0" text="Retry">
+                  	<font>
+            			<Font size="7.0" />
+         		  	</font>
+         		  </Button>
+         		  <Text fx:id="action" text="START!"/>
+         		  <Text fx:id="potion" text=""/>
+         		  <Text fx:id="timer" text=""/>
+               </items>
+            </ToolBar>
+         </children></AnchorPane>
+  </items>
+</SplitPane>
